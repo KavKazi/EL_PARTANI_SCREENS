@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor">
+
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_teacher_schedule"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bg_teacher_schedule" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/TimgITS"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/teacherpic2" />
+        <LinearLayout
+            android:layout_marginLeft="110dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txvDate"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:text="יום שני שעה חמישית:"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:paddingBottom="1dp"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/txvtime"
+                android:text="11:45-12:25"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
