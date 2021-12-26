@@ -9,4 +9,28 @@ public class Teacher_schedule_row {
         this.houre = houre;
         this.date = date;
     }
+
+    public int getHoure() {
+        return houre;
+    }
+
+    public void setHoure(int houre) {
+        this.houre = houre;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
 }

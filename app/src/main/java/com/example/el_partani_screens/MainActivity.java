@@ -2,6 +2,7 @@ package com.example.el_partani_screens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    ListView lv;
+    ListView lvT;
     ArrayList<Teacher> teachersList;
     TeacherAdapter teacheradapter;
     //varibales for animation
@@ -51,13 +52,14 @@ public class MainActivity extends AppCompatActivity {
         teachersList.add(t6);
 
         teacheradapter = new TeacherAdapter(this,0,0,teachersList);
-        lv =(ListView)findViewById(R.id.lv);
-        lv.setAdapter((ListAdapter) teacheradapter);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        lvT =(ListView)findViewById(R.id.lvT);
+        lvT.setAdapter((ListAdapter) teacheradapter);
+        lvT.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-             //צריך לעשות intent כדי לעבור לחמסך של השעות הפנויות .
-            }
+                Intent intent= new Intent(MainActivity.this,Teacher_schedule.class );
+                startActivity(intent);
+                finish();            }
         });
 
     }

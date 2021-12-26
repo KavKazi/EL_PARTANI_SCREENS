@@ -12,15 +12,11 @@
         <activity
             android:name=".Teacher_schedule"
             android:exported="false" />
-        <activity
-            android:name=".professionAdapter"
-            android:exported="false" />
+
         <activity
             android:name=".Profession_screen"
             android:exported="false" />
-        <activity
-            android:name=".TeacherAdapter"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
