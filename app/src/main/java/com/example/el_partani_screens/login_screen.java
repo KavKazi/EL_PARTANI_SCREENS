@@ -17,23 +17,27 @@ public class login_screen extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_screen);
 
-        Button login_btn = findViewById(R.id.loginbtn);
-        Button toSignUp_btn = findViewById(R.id.toSignUp_btn);
+        login_btn = findViewById(R.id.loginbtn);
+         toSignUp_btn = findViewById(R.id.toSignUp_btn);
         login_btn.setOnClickListener(this);
         toSignUp_btn.setOnClickListener(this);
     }
 
-        @Override
-        public void onClick (View v){
-            if ((v == login_btn)) {
-                Intent intent = new Intent(login_screen.this, Profession_screen.class);
-                startActivity(intent);
-            }
-            if ((v == toSignUp_btn)) {
-                Intent intent = new Intent(login_screen.this, Signup_screen.class);
-                startActivity(intent);
-            }
+    @Override
+    public void onClick(View v) {
+        if ((v == login_btn)) {
+            Intent intent = new Intent(login_screen.this, Profession_screen.class);
+            startActivity(intent);
         }
+        if ((v == toSignUp_btn)) {
+            Intent intent = new Intent(login_screen.this, Signup_screen.class);
+            startActivity(intent);
         }
+
+
+
+        //---------------------------fit
+    }
+}
 
 

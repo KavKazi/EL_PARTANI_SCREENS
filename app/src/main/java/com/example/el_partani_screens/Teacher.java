@@ -10,10 +10,18 @@ public class Teacher  {
     private String claas;
     private Bitmap bitmap;
 
+    public Teacher(){
+        //for firebase use later
+    }
     public Teacher(String name, String claas, Bitmap bitmap) {
         this.Name = name;
         this.claas = claas;
         this.bitmap = bitmap;
+    }
+
+    public Teacher(String name, String claas) {
+        Name = name;
+        this.claas = claas;
     }
 
     public String getName() {

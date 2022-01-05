@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -27,13 +28,16 @@ public class Profession_screen extends AppCompatActivity {
 
         gridView = findViewById(R.id.gridView);
 
-        professionAdapter = new professionAdapter(Profession_screen.this, professionsName, professionImage);
+        professionAdapter = new professionAdapter(Profession_screen.this,
+                professionsName, professionImage);
         gridView.setAdapter(professionAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getApplicationContext(),"את/ה לחת על "+ professionsName[+position],Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"את/ה לחצת על "+ professionsName[+position],
+                        Toast.LENGTH_SHORT).show();
+                Log.d("tag", professionsName[position]);
                 startActivity(new Intent(Profession_screen.this, MainActivity.class));
 
 

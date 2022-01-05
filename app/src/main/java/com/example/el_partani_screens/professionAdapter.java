@@ -8,11 +8,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
-public class professionAdapter extends AppCompatActivity implements ListAdapter {
+public class professionAdapter extends BaseAdapter {
     Context context;
     String[] professionsName;
     int[]professionImage;
@@ -44,7 +45,7 @@ public class professionAdapter extends AppCompatActivity implements ListAdapter 
 
     public Object getItem(int position)
     {
-        return null;
+        return professionImage[position];
     }
 
 
@@ -53,10 +54,6 @@ public class professionAdapter extends AppCompatActivity implements ListAdapter 
         return 0;
     }
 
-    @Override
-    public boolean hasStableIds() {
-        return false;
-    }
 
     public View getView(int position, View convertView, ViewGroup parent) {
 
@@ -75,28 +72,4 @@ public class professionAdapter extends AppCompatActivity implements ListAdapter 
         return convertView;
     }
 
-    @Override
-    public int getItemViewType(int position) {
-        return 0;
-    }
-
-    @Override
-    public int getViewTypeCount() {
-        return 0;
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return false;
-    }
-
-    @Override
-    public boolean areAllItemsEnabled() {
-        return false;
-    }
-
-    @Override
-    public boolean isEnabled(int position) {
-        return false;
-    }
 }

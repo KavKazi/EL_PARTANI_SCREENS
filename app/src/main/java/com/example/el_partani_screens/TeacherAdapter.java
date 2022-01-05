@@ -8,12 +8,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
 
-public class TeacherAdapter extends AppCompatActivity {
+public class TeacherAdapter extends BaseAdapter {
     Context context;
     List<Teacher> objects;
 
@@ -23,6 +24,22 @@ public class TeacherAdapter extends AppCompatActivity {
         this.objects = objects;
 
     }
+
+    @Override
+    public int getCount() {
+        return objects.size();
+    }
+
+    @Override
+    public Object getItem(int position) {
+        return objects.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+        return 0;
+    }
+
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater layoutInflater =((Activity)context).getLayoutInflater();
         View view= layoutInflater.inflate(R.layout.activity_teacher_adapter,parent,false);
