@@ -9,23 +9,21 @@
 
 
     <EditText
-        android:id="@+id/school"
+        android:id="@+id/inputName"
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:layout_marginTop="132dp"
         android:background="@drawable/edit_text_bg"
-        android:drawableLeft="@drawable/ic_baseline_school_24"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
         android:drawablePadding="20dp"
-        android:hint="school "
+        android:hint="name "
         android:padding="10dp"
         android:textColor="@color/white"
-
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signin" />
-
     <TextView
         android:id="@+id/signin"
         android:layout_width="202dp"
@@ -42,27 +40,10 @@
         app:layout_constraintVertical_bias="0.056" />
 
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/inputEmail"
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:layout_marginTop="192dp"
-        android:background="@drawable/edit_text_bg"
-        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
-        android:drawablePadding="20dp"
-        android:hint="username "
-        android:padding="10dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signin" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="384dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="256dp"
         android:background="@drawable/edit_text_bg"
         android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
         android:drawablePadding="20dp"
@@ -76,14 +57,31 @@
         app:layout_constraintTop_toBottomOf="@+id/signin" />
 
     <EditText
-        android:id="@+id/fohone"
+        android:id="@+id/inputPassword"
+        android:layout_width="384dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint="password "
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin" />
+
+    <EditText
+        android:id="@+id/InputConfirmPassword"
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:layout_marginTop="320dp"
         android:background="@drawable/edit_text_bg"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
-        android:hint="password "
+        android:hint="confrim password "
         android:padding="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -103,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fohone" />
+        app:layout_constraintTop_toBottomOf="@+id/InputConfirmPassword" />
 
     <TextView
         android:id="@+id/textView3"
@@ -116,10 +114,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signupbtn"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.431" />
 
     <ImageView
         android:id="@+id/imageView2"

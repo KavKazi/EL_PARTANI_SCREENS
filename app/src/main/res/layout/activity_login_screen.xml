@@ -24,14 +24,14 @@
         app:layout_constraintVertical_bias="0.056" />
 
     <EditText
-        android:id="@+id/school"
+        android:id="@+id/inputNameLIS"
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:layout_marginTop="160dp"
         android:background="@drawable/edit_text_bg"
-        android:drawableLeft="@drawable/ic_baseline_school_24"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
         android:drawablePadding="20dp"
-        android:hint="school "
+        android:hint="name "
         android:padding="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
     <EditText
-        android:id="@+id/userName"
+        android:id="@+id/inputEmailLIS"
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:layout_marginTop="228dp"
@@ -57,12 +57,12 @@
         app:layout_constraintTop_toBottomOf="@+id/login" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/inputPasswordLIS"
         android:layout_width="384dp"
         android:layout_height="49dp"
         android:layout_marginTop="296dp"
         android:background="@drawable/edit_text_bg"
-        android:drawableLeft="@drawable/ic_baseline_block_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
         android:hint="password "
         android:padding="10dp"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordLIS" />
 
     <TextView
         android:id="@+id/textView3"
@@ -98,11 +98,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtnLIS"
         app:layout_constraintVertical_bias="0.308" />
 
     <Button
-        android:id="@+id/loginbtn"
+        android:id="@+id/loginbtnLIS"
         android:layout_width="141dp"
         android:layout_height="44dp"
         android:layout_marginTop="12dp"
@@ -112,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPasswordLIS" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -146,7 +146,7 @@
         app:srcCompat="@drawable/twitter" />
 
     <Button
-        android:id="@+id/toSignUp_btn"
+        android:id="@+id/toSignUp_btnLIS"
         android:layout_width="141dp"
         android:layout_height="44dp"
         android:layout_marginTop="12dp"
@@ -156,7 +156,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtnLIS"
         app:layout_constraintVertical_bias="0.0" />
 
 
